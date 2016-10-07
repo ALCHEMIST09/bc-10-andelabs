@@ -6,8 +6,8 @@ def generate_primes(n):
     primes = [2]
     start = 3
     while True:
-        for divisor in range(2, int(start**0.5) + 1, 2):
-            if start % divisor == 0:
+        for divisor in range(3, int(start**0.5) + 1):
+            if start % divisor == 0 or start % 2 == 0:
                 break
         else:
             primes.append(start)
@@ -17,5 +17,5 @@ def generate_primes(n):
     return primes
 
 
-print(generate_primes(20))
+print(generate_primes(100))
 
