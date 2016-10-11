@@ -9,4 +9,4 @@ def words(arg):
             if item.isdigit():
                 item = int(item)
             result[item] = parts.count(str(item))
-        return result
+    return result
