@@ -2,7 +2,7 @@ class BinarySearch(list):
     """docstring for BinarySearch"""
 
     def __init__(self, a, b):
-        super(BinarySearch, self).__init__(b, ((a * b) + b), b)
+        super(BinarySearch, self).__init__(range(b, ((a * b) + b)), b)
         self.length = a
 
     def search(self, item):
